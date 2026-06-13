@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif; /* We are now using the Figma font! */
+}
+body {
+    background-color: #F7FAFC; /* This is the color you found! */
+}
+
+.main-header {
+    background-color: white; /* Let's keep the header white so it stands out */
+    display: flex;           /* This is "Magic Code" - it puts items in a row */
+    justify-content: space-between; /* This pushes the logo left and links right */
+    align-items: center;     /* This keeps everything centered top-to-bottom */
+    padding: 20px 50px;      /* This adds some breathing room inside the header */
+}
+/* This targets the 'a' tags (links) inside our nav-links box */
+.nav-links a {
+    text-decoration: none;  /* This removes the underline */
+    color: #333;            /* This makes the text a dark grey/black */
+    margin-left: 20px;      /* This adds space BETWEEN the links so they aren't touching */
+    font-weight: 500;       /* This makes the text a little bit thicker */
+}
+
+/* This makes the link change color when you hover your mouse over it! */
+.nav-links a:hover {
+    color: #8B96A5;         /* Change this to whatever primary color you see in Figma */
+}
+.search-container input {
+    padding: 8px 15px;      /* Adds space inside the box so the text isn't cramped */
+    border: 1px solid #ddd; /* Adds a light grey border */
+    border-radius: 20px;    /* This makes the corners ROUNDED like a pill */
+    width: 300px;           /* Makes the search bar wider */
+    outline: none;          /* Removes the thick blue glow when you click it */
+}
+/* The box holding the search pieces */
+.search-container {
+    display: flex;
+    border: 2px solid #0D6EFD; /* The blue color you found! */
+    border-radius: 8px;       /* Rounds the whole bar */
+    overflow: hidden;         /* Ensures the inside pieces don't spill out */
+    height: 40px;
+}
+
+/* The typing area */
+.search-input {
+    border: none;
+    padding: 0 15px;
+    width: 300px;
+    outline: none;
+}
+
+/* The "All category" dropdown */
+.category-select {
+    border: none;
+    border-left: 1px solid #ddd;
+    background: white;
+    padding: 0 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* The Blue Search Button */
+.search-btn {
+    background-color: #0D6EFD; /* Your blue color */
+    color: white;
+    border: none;
+    padding: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* This makes the button slightly darker when you hover over it */
+.search-btn:hover {
+    background-color: #0b5ed7;
+}
+.action-item p {
+    font-size: 12px;       /* The size you found! */
+    font-weight: 400;      /* The weight you found! */
+    color: #8B96A5;        /* That grey color from Figma */
+    margin-top: 4px;       /* Adds a tiny gap between icon and text */
+}
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Pushes links to the left and settings to the right */
+    align-items: center;
+    padding: 10px 50px;             /* Matches the side padding of our main header */
+    background-color: white;
+    border-top: 1px solid #E3E8EE;  /* Light grey line on top */
+    border-bottom: 1px solid #E3E8EE; /* Light grey line on bottom */
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;                      /* Space between each link */
+}
+
+.nav-left a, .dropdown {
+    text-decoration: none;
+    color: #1C1C1C;                 /* Dark text color */
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* Styling the "All category" section with the hamburger menu */
+.category-trigger {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Small arrows for the dropdowns */
+.material-symbols-outlined {
+    font-size: 20px;
+}
+.header-actions {
+    display: flex;
+    gap: 20px;
+}
+
+.action-item {
+    display: flex;
+    flex-direction: column; /* This stacks Icon on top of Text */
+    align-items: center;
+    cursor: pointer;
+    color: #8B96A5; /* The grey color from Figma */
+}
+
+.action-item span {
+    font-size: 20px; /* Adjust size to match Figma */
+    margin-bottom: 4px;
+}
+
+.action-item p {
+    font-size: 12px;
+    margin: 0;
+}
+/* --- FOOTER STYLES --- */
+
+.main-footer {
+    background-color: white;
+    padding: 40px 50px 0 50px; /* Top, Right, Bottom, Left */
+    border-top: 1px solid #E3E8EE;
+    margin-top: 40px; /* Pushes it away from the content above */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* This spreads the columns out evenly */
+    flex-wrap: wrap; /* Helps if the screen gets smaller */
+    padding-bottom: 40px;
+}
+
+.footer-col {
+    flex: 1; /* Makes each column take up equal space */
+    min-width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-col h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #1C1C1C;
+}
+
+.footer-col ul {
+    list-style: none; /* Removes the bullet points */
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #8B96A5; /* That specific grey from Figma */
+    font-size: 16px;
+}
+
+.footer-col ul li a:hover {
+    color: #0D6EFD; /* Turns blue when you hover */
+}
+
+.footer-desc {
+    color: #505050;
+    font-size: 16px;
+    margin: 15px 0;
+    line-height: 24px;
+    max-width: 200px;
+}
+
+/* The Bottom Bar with Copyright */
+.footer-bottom {
+    background-color: #EFF2F4; /* Light grey bar at the very bottom */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    margin: 0 -50px; /* This makes the bar stretch to the very edges */
+}
+
+.footer-bottom p {
+    color: #606060;
+}
+
+.footer-lang {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+/* Placeholders for App Badges */
+.app-badge {
+    background-color: #1C1C1C;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    width: 120px;
+    text-align: center;
+}
+.newsletter {
+    background-color: #EFF2F4;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #E3E8EE;
+}
+
+.newsletter h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    color: #606060;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.input-group {
+    background: white;
+    border: 1px solid #DEE2E7;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.input-group input {
+    border: none;
+    padding: 10px;
+    outline: none;
+    width: 250px;
+}
+
+.newsletter button {
+    background-color: #0D6EFD;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-circle {
+    width: 32px;
+    height: 32px;
+    background-color: #BDC4CD; /* The grey color from Figma icons */
+    color: white;
+    border-radius: 50%; /* This makes it a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+}

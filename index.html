@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Project</title>
+    
+    <!-- 1. Google Font: Inter (What you found in Figma!) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- 2. Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <!-- 3. Your CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="main-header">
+    <!-- 1. The Logo -->
+    <div class="logo">
+        <img src="images/logo.png" alt="Brand Logo"> <!-- We will add the image later, for now it will just be a placeholder -->
+        <span class="brand-text">Brand</span>
+    </div>
+
+   <div class="search-container">
+    <input type="text" class="search-input" placeholder="Search">
+    <select class="category-select">
+        <option>All category</option>
+    </select>
+    <button class="search-btn">Search</button>
+</div>
+
+    <div class="header-actions">
+    <div class="action-item">
+        <span class="material-symbols-outlined">person</span>
+        <p>Profile</p>
+    </div>
+    <div class="action-item">
+        <span class="material-symbols-outlined">chat</span>
+        <p>Message</p>
+    </div>
+    <div class="action-item">
+        <span class="material-symbols-outlined">favorite</span>
+        <p>Orders</p>
+    </div>
+    <div class="action-item">
+        <span class="material-symbols-outlined">shopping_cart</span>
+        <p>My cart</p>
+    </div>
+</div>
+</header>
+<nav class="navbar">
+    <!-- Left Side: Main Links -->
+    <div class="nav-left">
+        <div class="category-trigger">
+            <span class="material-symbols-outlined">menu</span>
+            <span>All category</span>
+        </div>
+        <a href="#">Hot offers</a>
+        <a href="#">Gift boxes</a>
+        <a href="#">Projects</a>
+        <a href="#">Menu item</a>
+        <div class="dropdown">
+            <span>Help</span>
+            <span class="material-symbols-outlined">expand_more</span>
+        </div>
+    </div>
+
+    <!-- Right Side: Settings -->
+    <div class="nav-right">
+        <div class="dropdown">
+            <span>English, USD</span>
+            <span class="material-symbols-outlined">expand_more</span>
+        </div>
+        <div class="dropdown">
+            <span>Ship to</span>
+            <img src="https://flagcdn.com/w20/de.png" alt="Germany Flag" style="width: 18px; margin-left: 5px;">
+            <span class="material-symbols-outlined">expand_more</span>
+        </div>
+    </div>
+</nav>
+<section class="newsletter">
+    <h3>Subscribe on our newsletter</h3>
+    <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+    <div class="newsletter-form">
+        <div class="input-group">
+            <span class="material-symbols-outlined">mail</span>
+            <input type="email" placeholder="Email">
+        </div>
+        <button>Subscribe</button>
+    </div>
+</section>
+<footer class="main-footer">
+    <div class="footer-container">
+        <!-- Column 1: Logo and Socials -->
+        <div class="footer-col">
+            <div class="logo">
+                <img src="images/logo.png" alt="Brand Logo">
+                <span class="brand-text">Brand</span>
+            </div>
+            <p class="footer-desc">Best information about the company gies here but now lorem ipsum is </p>
+           <div class="social-icons">
+    <span class="social-circle">f</span> <!-- You can replace with real icons later -->
+    <span class="social-circle">t</span>
+    <span class="social-circle">in</span>
+    <span class="social-circle">ig</span>
+    <span class="social-circle">yt</span>
+</div>
+        </div>
+
+        <!-- Column 2: About -->
+        <div class="footer-col">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Find store</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Partnership -->
+        <div class="footer-col">
+            <h4>Partnership</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Find store</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4: Information -->
+        <div class="footer-col">
+            <h4>Information</h4>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Money Refund</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 5: For Users -->
+        <div class="footer-col">
+            <h4>For users</h4>
+            <ul>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">My Orders</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 6: App Store -->
+        <div class="footer-col">
+            <h4>Get app</h4>
+            <div class="app-buttons">
+                <!-- Placeholders for App Store buttons -->
+                <div class="app-badge">App Store</div>
+                <div class="app-badge">Google Play</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+        <p>© 2023 Ecommerce. </p>
+        <div class="footer-lang">
+            <img src="https://flagcdn.com/w20/us.png" alt="US Flag">
+            <span>English</span>
+            <span class="material-symbols-outlined">expand_less</span>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
